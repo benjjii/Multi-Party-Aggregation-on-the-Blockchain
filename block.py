@@ -21,3 +21,18 @@ class Block:
         inner_hash = hashlib.sha256(header_bin.encode()).hexdigest().encode()
         outer_hash = hashlib.sha256(inner_hash).hexdigest()
         return outer_hash
+    
+    
+   #implement an API model that aids with currency exchanges
+
+{
+	"result": "success",
+	"from": "USD",
+	"rates": {
+		"AUD": ((AUD in terms of USD)),
+		"BGN": 1.8096,
+		"BRL": 3.1143,
+		"...": 1.3113,
+		"...": 7.473, etc. etc.
+	}
+}
